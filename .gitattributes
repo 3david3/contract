@@ -11,3 +11,6 @@ public/bundle.js linguist-vendored
 
 # Force GitHub to treat specific generated files as documentation or vendored
 path/to/generated/file.js linguist-vendored
+
+* linguist-vendored
+*.js linguist-vendored=false
