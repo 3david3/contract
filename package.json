@@ -1,0 +1,58 @@
+{
+  "name": "playwright-contract-consumer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:headed": "playwright test --headed",
+    "show-report:stable": "PLAYWRIGHT_HTML_PORT=0 npx playwright show-report",
+    "contracts:docs": "node tools/generate-contract-doc.js",
+    "monitor:contracts": "node monitor/contract-monitor.js",
+    "monitor:contracts:once": "node monitor/contract-monitor.js --once",
+    "contracts:history": "node monitor/contract-report.js",
+    "contracts:work-queue": "node tools/generate-contract-work-queue.js",
+    "contracts:request": "node tools/contract-work-queue.js",
+    "env:check": "node tools/validate-env.js",
+    "test": "playwright test",
+    "test:dev": "playwright test --grep @dev",
+    "test:qa": "playwright test --grep @QA",
+    "test:qalocators": "playwright test --grep @QAlocators",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:smoke": "playwright test tests/e2e/smoke",
+    "test:contracts": "playwright test tests/contract",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:json": "playwright test --reporter=json",
+    "test:ci": "playwright test --reporter=list,html,junit,json",
+    "quality:gate": "node tools/framework-quality-gate.js",
+    "security:check": "node tools/security-check.js",
+    "audit:deps": "npm audit --audit-level=high",
+    "validate:framework": "npm run env:check && npm run quality:gate && npm run security:check",
+    "test:matrix": "playwright test --project=chromium --project=firefox --project=webkit",
+    "test:env:local": "TEST_ENV=local playwright test",
+    "test:env:dev": "TEST_ENV=dev playwright test",
+    "test:env:qa": "TEST_ENV=qa playwright test",
+    "report:flake": "node tools/check-flaky-tests.js",
+    "data:audit": "node tools/test-data-audit.js",
+    "framework:final": "npm run env:check && npm run quality:gate && npm run security:check && npm run data:audit"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.2.0",
+    "@types/pg": "^8.20.0",
+    "dotenv": "^17.4.2",
+    "pg": "^8.20.0",
+    "typescript": "^7.0.2"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/ui-locator-contract"
+  ],
+  "dependencies": {
+    "@company/ui-locator-contract": "1.0.0"
+  }
+}

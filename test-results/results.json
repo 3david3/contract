@@ -1,0 +1,370 @@
+{
+  "config": {
+    "argv": [
+      "/usr/local/bin/node",
+      "/Users/ddaunay/Documents/Documents_DDaunay_MacBook_Pro/Automation/playwright/playwright_contract_steps30_final/node_modules/.bin/playwright",
+      "test",
+      "validate_table.spec.ts",
+      "--headed"
+    ],
+    "configFile": "/Users/ddaunay/Documents/Documents_DDaunay_MacBook_Pro/Automation/playwright/playwright_contract_steps30_final/playwright.config.ts",
+    "rootDir": "/Users/ddaunay/Documents/Documents_DDaunay_MacBook_Pro/Automation/playwright/playwright_contract_steps30_final/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/ddaunay/Documents/Documents_DDaunay_MacBook_Pro/Automation/playwright/playwright_contract_steps30_final/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/ddaunay/Documents/Documents_DDaunay_MacBook_Pro/Automation/playwright/playwright_contract_steps30_final/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/auth\\.setup\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/ddaunay/Documents/Documents_DDaunay_MacBook_Pro/Automation/playwright/playwright_contract_steps30_final/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/ddaunay/Documents/Documents_DDaunay_MacBook_Pro/Automation/playwright/playwright_contract_steps30_final/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.spec\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/ddaunay/Documents/Documents_DDaunay_MacBook_Pro/Automation/playwright/playwright_contract_steps30_final/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/ddaunay/Documents/Documents_DDaunay_MacBook_Pro/Automation/playwright/playwright_contract_steps30_final/tests",
+        "testIgnore": [
+          "/.*\\/api\\/.*/"
+        ],
+        "testMatch": [
+          "/.*\\.spec\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/ddaunay/Documents/Documents_DDaunay_MacBook_Pro/Automation/playwright/playwright_contract_steps30_final/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/ddaunay/Documents/Documents_DDaunay_MacBook_Pro/Automation/playwright/playwright_contract_steps30_final/tests",
+        "testIgnore": [
+          "/.*\\/api\\/.*/"
+        ],
+        "testMatch": [
+          "/.*\\.spec\\.ts/"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "host": "127.0.0.1",
+          "port": 9401
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 5,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.setup.ts",
+      "file": "auth.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Log in via API and create authenticated storage state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 347,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "LOGIN API STATUS: 200 OK\n"
+                    },
+                    {
+                      "text": "Authentication successful. Storage state written to playwright/.auth/user.json.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-08T19:45:18.618Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-6dfaf639d86c4532ea13",
+          "file": "auth.setup.ts",
+          "line": 10,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "e2e/smoke/validate_table.spec.ts",
+      "file": "e2e/smoke/validate_table.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Notes Validation",
+          "file": "e2e/smoke/validate_table.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Should open the page and create a note",
+              "ok": true,
+              "tags": [
+                "QA",
+                "dev"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7671,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Total number of notes found via API: 15\n"
+                        },
+                        {
+                          "text": "Note count is 15. No cleanup required.\n"
+                        },
+                        {
+                          "text": "Total number of note cards visible in UI: 15\n"
+                        },
+                        {
+                          "text": "Creating unique test note: E2E Note | cc6737e3 | chromium | worker-1\n"
+                        },
+                        {
+                          "text": "[cleanup] 16 record(s); below threshold or no framework notes to remove.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-08T19:45:19.356Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9b3c3935569b46cb9ed9-2f0041789ac10e91bc72",
+              "file": "e2e/smoke/validate_table.spec.ts",
+              "line": 19,
+              "column": 7
+            },
+            {
+              "title": "Should open the page and create a note",
+              "ok": true,
+              "tags": [
+                "QA",
+                "dev"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4027,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Total number of notes found via API: 16\n"
+                        },
+                        {
+                          "text": "Note count is 16. No cleanup required.\n"
+                        },
+                        {
+                          "text": "Total number of note cards visible in UI: 16\n"
+                        },
+                        {
+                          "text": "Creating unique test note: E2E Note | c7dc4c1c | firefox | worker-2\n"
+                        },
+                        {
+                          "text": "[cleanup] 17 record(s); below threshold or no framework notes to remove.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-08T19:45:19.366Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9b3c3935569b46cb9ed9-2ff927746d92738ea455",
+              "file": "e2e/smoke/validate_table.spec.ts",
+              "line": 19,
+              "column": 7
+            },
+            {
+              "title": "Should open the page and create a note",
+              "ok": true,
+              "tags": [
+                "QA",
+                "dev"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7009,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Total number of notes found via API: 15\n"
+                        },
+                        {
+                          "text": "Note count is 15. No cleanup required.\n"
+                        },
+                        {
+                          "text": "Total number of note cards visible in UI: 16\n"
+                        },
+                        {
+                          "text": "Creating unique test note: E2E Note | 2e24c89c | webkit | worker-3\n"
+                        },
+                        {
+                          "text": "[cleanup] Threshold 18 reached (18 records). Deleted 18 framework note(s).\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-08T19:45:19.356Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9b3c3935569b46cb9ed9-554fd4ae42cb97c289b1",
+              "file": "e2e/smoke/validate_table.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-08T19:45:18.280Z",
+    "duration": 9570.529999999999,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    /*"moduleResolution": "Node", */
+    "lib": ["ES2022", "DOM"],
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@helpers/*": ["./src/utils/helper.ts"]
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node", "@playwright/test"]
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts", "playwright.config.ts"],
+  "exclude": ["node_modules", "packages/ui-locator-contract/dist"]
+}

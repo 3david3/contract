@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    {
+      "dependencyId": "DEP-0001",
+      "status": "BLOCKED",
+      "waitingTeam": "Team A",
+      "waitingFor": "Development",
+      "waitingSince": "2026-09-04T09:00:00-04:00",
+      "dependency": "Build 1234",
+      "reason": "Notes Archive feature is not available in the current QA build.",
+      "requiredBy": "2026-09-10T15:00:00-04:00",
+      "dependencyOwner": "Development",
+      "impact": "archiveNote() contract cannot be created or validated."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="9.570529999999998">
+<testsuite name="auth.setup.ts" timestamp="2026-09-08T19:45:18.324Z" hostname="setup" tests="1" failures="0" skipped="0" time="0.347" errors="0">
+<testcase name="Log in via API and create authenticated storage state" classname="auth.setup.ts" time="0.347">
+<system-out>
+<![CDATA[LOGIN API STATUS: 200 OK
+Authentication successful. Storage state written to playwright/.auth/user.json.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="e2e/smoke/validate_table.spec.ts" timestamp="2026-09-08T19:45:18.324Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.671" errors="0">
+<testcase name="Notes Validation › Should open the page and create a note" classname="e2e/smoke/validate_table.spec.ts" time="7.671">
+<system-out>
+<![CDATA[Total number of notes found via API: 15
+Note count is 15. No cleanup required.
+Total number of note cards visible in UI: 15
+Creating unique test note: E2E Note | cc6737e3 | chromium | worker-1
+[cleanup] 16 record(s); below threshold or no framework notes to remove.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="e2e/smoke/validate_table.spec.ts" timestamp="2026-09-08T19:45:18.324Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.027" errors="0">
+<testcase name="Notes Validation › Should open the page and create a note" classname="e2e/smoke/validate_table.spec.ts" time="4.027">
+<system-out>
+<![CDATA[Total number of notes found via API: 16
+Note count is 16. No cleanup required.
+Total number of note cards visible in UI: 16
+Creating unique test note: E2E Note | c7dc4c1c | firefox | worker-2
+[cleanup] 17 record(s); below threshold or no framework notes to remove.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="e2e/smoke/validate_table.spec.ts" timestamp="2026-09-08T19:45:18.324Z" hostname="webkit" tests="1" failures="0" skipped="0" time="7.009" errors="0">
+<testcase name="Notes Validation › Should open the page and create a note" classname="e2e/smoke/validate_table.spec.ts" time="7.009">
+<system-out>
+<![CDATA[Total number of notes found via API: 15
+Note count is 15. No cleanup required.
+Total number of note cards visible in UI: 16
+Creating unique test note: E2E Note | 2e24c89c | webkit | worker-3
+[cleanup] Threshold 18 reached (18 records). Deleted 18 framework note(s).
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

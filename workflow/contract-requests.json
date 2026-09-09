@@ -1,0 +1,43 @@
+{
+  "requests": [
+    {
+      "requestId": "CR-0001",
+      "contract": "Notes",
+      "contractVersion": "1.256",
+      "request": "Add archiveNote()",
+      "requestedBy": "Team B",
+      "neededFor": "Notes automation",
+      "priority": "P1",
+      "created": "2026-09-04T09:00:00-04:00",
+      "updated": "2026-09-04T09:00:00-04:00",
+      "requiredBy": "2026-09-10T15:00:00-04:00",
+      "status": "NEW",
+      "owner": "Team A - Locator QA",
+      "dependency": "Build 1234",
+      "waitingTeam": "Team A",
+      "waitingFor": "Development",
+      "waitingSince": "2026-09-04T09:00:00-04:00",
+      "dependencyOwner": "Development",
+      "impact": "archiveNote() cannot be automated until the feature is available in a QA build.",
+      "acceptanceCriteria": [
+        "archiveNote() available in NotesContract",
+        "Locator maintained by Team A",
+        "Contract test passes",
+        "Chromium passes",
+        "Firefox passes",
+        "WebKit passes"
+      ],
+      "requestedAgainstVersion": "1.256",
+      "implementedInVersion": null,
+      "validation": null,
+      "completed": null,
+      "statusHistory": [
+        {
+          "status": "NEW",
+          "at": "2026-09-04T09:00:00-04:00",
+          "by": "Team B"
+        }
+      ]
+    }
+  ]
+}
