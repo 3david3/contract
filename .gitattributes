@@ -14,6 +14,3 @@ path/to/generated/file.js linguist-vendored
 
 * linguist-vendored
 *.js linguist-vendored=false
-
-* linguist-vendored
-jquery.js linguist-vendored=false
