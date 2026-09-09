@@ -1,3 +1,13 @@
 # THIS IS ONLY FOR THE gitattributes REPOSITORY.
 *.html linguist-detectable=false
 docs/** linguist-documentation=true
+
+# Ignore build or distribution directories
+dist/**/*.js linguist-vendored
+build/**/*.js linguist-vendored
+
+# Ignore specific minified or bundle files
+public/bundle.js linguist-vendored
+
+# Force GitHub to treat specific generated files as documentation or vendored
+path/to/generated/file.js linguist-vendored
