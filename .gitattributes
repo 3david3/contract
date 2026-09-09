@@ -13,4 +13,4 @@ public/bundle.js linguist-vendored
 path/to/generated/file.js linguist-vendored
 
 * linguist-vendored
-*.js linguist-vendored=false
+*.ts linguist-vendored=false
