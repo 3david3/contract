@@ -4,6 +4,13 @@ This framework uses a QA-owned UI locator contract, API service layer, unique te
 
 ## Quick start
 
+- Navigate to this Web Page :   https://practice.expandtesting.com/notes/app      
+- then press the 'Create an account' button and insert a name, a random but valid email address and password.
+- Press Register.
+
+Use these credentials in the following .env file. (See below the next step).
+
+
 Add those 2 files .env and .gitignore:
 
   .env    Example: 
@@ -14,7 +21,7 @@ Add those 2 files .env and .gitignore:
   BASE_URL=https://example.com
 
 ```
-
+BASE_URL=https://practice.expandtesting.com/
 
 
 
