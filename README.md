@@ -51,8 +51,8 @@ ______________________________________________________________________
 Commands
 
 ```bash
-npm ci
 npm install
+npm ci
 npx playwright install
 npm run validate:framework
 npx playwright test validate_table.spec.ts --headed
