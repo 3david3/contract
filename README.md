@@ -1,4 +1,4 @@
-# Playwright Contract Framework — Final
+# Playwright Contract Framework
 
 This framework uses a QA-owned UI locator contract, API service layer, unique test-data factories, environment profiles, CI browser matrix, failure diagnostics, reporting, and security/quality gates.
 
@@ -18,7 +18,7 @@ Add those 2 files .env and .gitignore:
 ```
   TEST_USER_EMAIL=email@yahoo.com
   TEST_USER_PASSWORD= p a s s w o r d
-  BASE_URL=https://example.com
+  BASE_URL=https://practice.expandtesting.com
 
 ```
 BASE_URL=https://practice.expandtesting.com/
