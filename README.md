@@ -42,6 +42,7 @@ playwright/.auth/
 reports/
 .auth/
 .DS_Store
+tests/locator-validation/generated/
 ```
 
 
