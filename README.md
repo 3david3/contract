@@ -11,7 +11,7 @@ This framework uses a QA-owned UI locator contract, API service layer, unique te
 Use these credentials in the following .env file. (See below the next step).
 
 
-Add those 2 files .env and .gitignore:
+Add this files .env on the root project following the example below
 
   .env    Example: 
   
@@ -25,25 +25,6 @@ BASE_URL=https://practice.expandtesting.com/
 
 
 
-
-.gitignore
-
-```
-node_modules/
-dist/
-.env
-.env.staging
-.env.production
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-playwright/.auth/
-reports/
-.auth/
-.DS_Store
-tests/locator-validation/generated/
-```
 
 
 
